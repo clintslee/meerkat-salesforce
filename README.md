@@ -4,7 +4,7 @@ This is a Meerkat REST API wrapper built for the Force.com platform.
 
 With this library you can:
 
-* Make requests to Meerkat's [REST API](http://http://developers.meerkatapp.co/api)
+* Make requests to Meerkat's [REST API](http://developers.meerkatapp.co/api)
 * Get a list of all current and upcoming broadcasts
 * Find broadcast stats like comments, restreams, and likes
 * Get a user's details including a list of followers and following
@@ -18,7 +18,7 @@ If you're installing this library for the first time just install using this unm
 Getting Started
 ==========
 
-You will need a Meerkat API Key to make begin making requests.  You can apply for one [here] <https://docs.google.com/a/meerkatapp.co/forms/d/1B-6gFyMTP_29bj10ogmlciWWMH1xQFWVI3LeYSDeZbM/viewform>.
+You will need a Meerkat API Key to make begin making requests.  You can apply for one [here](https://docs.google.com/a/meerkatapp.co/forms/d/1B-6gFyMTP_29bj10ogmlciWWMH1xQFWVI3LeYSDeZbM/viewform).
 
 Below are examples of how to use the Meerkat Rest Client.
 
@@ -40,7 +40,7 @@ for(MeerkatBroadcast bc : broadcasts.getPageData())
 }
 ```
 
-Get one Broadcast
+Get a Broadcast
 -----------
 This sample gets a single broadcast when the broadcast id is known.
 
@@ -112,6 +112,7 @@ for(MeerkatLike l : likes)
     System.debug('Title: ' + l.getTitle());
     System.debug('Message: ' + l.getMessage());
 }
+```
 
 Get a list of Restreams
 ---------------
@@ -132,6 +133,7 @@ for(MeerkatRestream restream : restreams)
     System.debug('Title: ' + restream.getTitle());
     System.debug('Message: ' + restream.getMessage());
 }
+```
 
 Get a list of Watchers
 ---------------
@@ -206,4 +208,4 @@ for(MeerkatUser user : following.getPageData())
 Attribution
 ==========
 
-The framework/structure of the [Twilio-Salesforce Library]<https://github.com/twilio/twilio-salesforce> was heavily leveraged to build this library.  Hats off to [John Sheehan]<https://github.com/johnsheehan>, [Jon Plax]<https://github.com/spaceman1066> and all the other contributors for building that great library.
+The framework/structure of the [Twilio-Salesforce Library](https://github.com/twilio/twilio-salesforce) was heavily leveraged to build this library.  Hats off to [John Sheehan](https://github.com/johnsheehan), [Jon Plax](https://github.com/spaceman1066) and all the other contributors for building that great library.
